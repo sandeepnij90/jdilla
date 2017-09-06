@@ -1,0 +1,81 @@
+/* line 1, ../sass/components/_base.scss */
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/binding_dark.png");
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 6, ../sass/components/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 10, ../sass/components/_base.scss */
+.container {
+  max-width: 960px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  -moz-box-shadow: 0 0 15px #888;
+  -webkit-box-shadow: 0 0 15px #888;
+  box-shadow: 0 0 15px #888;
+  margin: 50px auto;
+}
+/* line 20, ../sass/components/_base.scss */
+.container .wrapper {
+  padding: 20px;
+}
+
+/* line 1, ../sass/components/_header.scss */
+header {
+  width: 100%;
+  min-height: 350px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 9, ../sass/components/_header.scss */
+header .title {
+  padding-top: 100px;
+}
+/* line 11, ../sass/components/_header.scss */
+header .title .shade {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+/* line 15, ../sass/components/_header.scss */
+header .title .shade h1 {
+  font-size: 40px;
+  margin: 0;
+}
+/* line 22, ../sass/components/_header.scss */
+header .title .shade h2 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/* line 1, ../sass/components/_nav.scss */
+nav {
+  background-color: #000000;
+  padding: 5px;
+}
+/* line 5, ../sass/components/_nav.scss */
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+/* line 9, ../sass/components/_nav.scss */
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+/* line 12, ../sass/components/_nav.scss */
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 15, ../sass/components/_nav.scss */
+nav ul li a:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/binding_dark.png");
+  font-family: $font;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $white;
+  -moz-box-shadow: 0 0 15px #888;
+  -webkit-box-shadow: 0 0 15px #888;
+  box-shadow: 0 0 15px #888;
+  margin:50px auto;
+
+  .wrapper {
+    padding: 20px;
+  }
+}
