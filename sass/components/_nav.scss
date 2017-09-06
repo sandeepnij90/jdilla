@@ -1,21 +1,23 @@
 nav {
-  background-color: $black;
-  padding: 5px;
+    background-color: $black;
+    padding: 5px;
 
-  ul {
-    list-style: none;
-    text-align: right;
+    ul {
+        list-style: none;
+        text-align: right;
 
-    li {
-      display: inline-block;
-      margin: 0 15px;
-      a {
-        color: $white;
-        text-decoration: none;
-        &:hover {
-          text-decoration: none;
+        li {
+            display: inline-block;
+            margin: 0 15px;
+
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
-      }
     }
-  }
 }

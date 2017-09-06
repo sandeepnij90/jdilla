@@ -36,6 +36,13 @@ p {
 }
 
 /* line 33, ../sass/components/_base.scss */
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* line 39, ../sass/components/_base.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -54,17 +61,17 @@ header {
 header .title {
   padding-top: 100px;
 }
-/* line 11, ../sass/components/_header.scss */
+/* line 12, ../sass/components/_header.scss */
 header .title .shade {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
-/* line 15, ../sass/components/_header.scss */
+/* line 16, ../sass/components/_header.scss */
 header .title .shade h1 {
   font-size: 40px;
   margin: 0;
 }
-/* line 22, ../sass/components/_header.scss */
+/* line 21, ../sass/components/_header.scss */
 header .title .shade h2 {
   margin: 0;
   padding-top: 20px;
@@ -86,12 +93,12 @@ nav ul li {
   display: inline-block;
   margin: 0 15px;
 }
-/* line 12, ../sass/components/_nav.scss */
+/* line 13, ../sass/components/_nav.scss */
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 15, ../sass/components/_nav.scss */
+/* line 17, ../sass/components/_nav.scss */
 nav ul li a:hover {
   text-decoration: none;
 }
@@ -122,7 +129,7 @@ nav ul li a:hover {
   margin-bottom: 10px;
   display: block;
 }
-/* line 29, ../sass/components/_description.scss */
+/* line 30, ../sass/components/_description.scss */
 .description .text a i {
   padding-right: 5px;
 }
@@ -132,11 +139,11 @@ nav ul li a:hover {
     float: right;
     width: 45%;
   }
-  /* line 39, ../sass/components/_description.scss */
+  /* line 40, ../sass/components/_description.scss */
   .description .text p {
     margin: 0;
   }
-  /* line 43, ../sass/components/_description.scss */
+  /* line 45, ../sass/components/_description.scss */
   .description .video {
     float: left;
     width: 50%;
@@ -155,7 +162,7 @@ nav ul li a:hover {
   width: 300px;
   max-width: 100%;
 }
-/* line 11, ../sass/components/_mainimage.scss */
+/* line 12, ../sass/components/_mainimage.scss */
 .main-image i {
   display: block;
 }
@@ -179,24 +186,36 @@ nav ul li a:hover {
   display: block;
   margin: auto;
 }
-/* line 17, ../sass/components/_quotes.scss */
+/* line 18, ../sass/components/_quotes.scss */
 .quotes .quote p {
   margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
-  /* line 22, ../sass/components/_quotes.scss */
+  /* line 23, ../sass/components/_quotes.scss */
   .quotes ul {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
   }
-  /* line 27, ../sass/components/_quotes.scss */
+  /* line 29, ../sass/components/_quotes.scss */
   .quotes .quote {
     width: 30%;
   }
-  /* line 29, ../sass/components/_quotes.scss */
+  /* line 32, ../sass/components/_quotes.scss */
   .quotes .quote:nth-child(2) {
     margin-left: 4%;
     margin-right: 4%;
   }
+}
+
+/* line 1, ../sass/components/_footer.scss */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+/* line 7, ../sass/components/_footer.scss */
+footer h3 {
+  font-weight: 400;
 }

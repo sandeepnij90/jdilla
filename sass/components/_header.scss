@@ -1,30 +1,28 @@
 header {
-  width:100%;
-  min-height:350px;
-  background-image: url("../images/header.jpg");
-  background-size: cover;
-  text-align: center;
-  color: $white;
+    width: 100%;
+    min-height: 350px;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    text-align: center;
+    color: $white;
 
-  .title {
-    padding-top:100px;
-    .shade {
-      background-color:rgba($black,0.5);
-      padding:20px;
+    .title {
+        padding-top: 100px;
 
-      h1 {
-        font-size: $header-font-size;
-        margin:0;
+        .shade {
+            background-color: rgba($black,0.5);
+            padding: 20px;
 
+            h1 {
+                font-size: $header-font-size;
+                margin: 0;
+            }
 
-      }
-
-      h2 {
-        margin:0;
-        padding-top: 20px;
-        font-size: $header-font-size-small;
-      }
+            h2 {
+                margin: 0;
+                padding-top: 20px;
+                font-size: $header-font-size-small;
+            }
+        }
     }
-
-  }
 }
