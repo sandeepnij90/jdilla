@@ -35,6 +35,12 @@ p {
   margin: 0;
 }
 
+/* line 33, ../sass/components/_base.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* line 1, ../sass/components/_header.scss */
 header {
   width: 100%;
@@ -134,5 +140,63 @@ nav ul li a:hover {
   .description .video {
     float: left;
     width: 50%;
+  }
+}
+
+/* line 1, ../sass/components/_mainimage.scss */
+.main-image {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px;
+  text-align: center;
+}
+/* line 7, ../sass/components/_mainimage.scss */
+.main-image img {
+  width: 300px;
+  max-width: 100%;
+}
+/* line 11, ../sass/components/_mainimage.scss */
+.main-image i {
+  display: block;
+}
+
+/* line 1, ../sass/components/_quotes.scss */
+.quotes {
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 5, ../sass/components/_quotes.scss */
+.quotes .quote {
+  vertical-align: top;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 12, ../sass/components/_quotes.scss */
+.quotes .quote img {
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+}
+/* line 17, ../sass/components/_quotes.scss */
+.quotes .quote p {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 22, ../sass/components/_quotes.scss */
+  .quotes ul {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  /* line 27, ../sass/components/_quotes.scss */
+  .quotes .quote {
+    width: 30%;
+  }
+  /* line 29, ../sass/components/_quotes.scss */
+  .quotes .quote:nth-child(2) {
+    margin-left: 4%;
+    margin-right: 4%;
   }
 }

@@ -1,0 +1,35 @@
+.quotes {
+  text-align: center;
+  padding-top:20px;
+
+  .quote {
+    vertical-align: top;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-bottom:1px solid $grey;
+
+      img {
+        border-radius: 50px;
+        display: block;
+        margin:auto;
+      }
+      p {
+        margin-top: 20px;
+      }
+  }
+  @media screen and (min-width:768px) {
+    ul {
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+    }
+    .quote {
+      width:30%;
+      &:nth-child(2) {
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+    }
+  }
+}
