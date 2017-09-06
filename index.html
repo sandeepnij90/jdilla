@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="stylesheets/index.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
     <div class="container">
@@ -28,7 +30,7 @@
       <section class="description wrapper">
         <div class="text">
             <p>"James Dewitt Yancey, better known by the stage names J Dilla and Jay Dee, was an American record producer who emerged from the mid-1990s underground hip-hop scene in Detroit, Michigan. According to his obituary at NPR.org, he "was one of the music industry's most influential hip-hop artists, working for big-name acts including A Tribe Called Quest, De La Soul, Busta Rhymes, The Pharcyde and Common." Yancey died in 2006 of the blood disease Thrombotic thrombocytopenic purpura."</p>
-            <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i>J Dilla on Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/J_Dilla" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>J Dilla on Wikipedia</a>
         </div>
         <div class="video">
           <div class="videowrapper">
@@ -43,24 +45,12 @@
         <i>J Dilla</i>
       </section>
 
-      <section class="quotes wrapper">
+      <section class="quotes wrapper" ng-controller="quotes">
         <ul>
-          <li class="quote">
-            <img src="images/questlove.jpg" alt="questlove.jpg">
-            <p>"If you were to secretly ask the most praised hip-hop producers, if given a top three, who they fear the most, Dilla’s name would chart on everyone’s list, hands down."</p>
-            <i>- Quest Love</i>
-          </li>
-
-          <li class="quote">
-            <img src="images/blackthought.jpg" alt="questlove.jpg">
-            <p>"I can't begin to explain the influence his mind and ear has had on my band, myself, and the careers of so many other artists. The most humble, modest, worthy and gifted beatmaker I've known...and definitely the best producer on a mic."</p>
-            <i>- Black Thought</i>
-          </li>
-
-          <li class="quote">
-            <img src="images/peterock.jpg" alt="questlove.jpg">
-            <p>"He was one of the greatest, man. He was the greatest to ever do it, for the new cats. And for his mother to tell me that I was his favorite producer – I was like ‘Wow, that’s dope, man.’"</p>
-            <i>-Pete Rock</i>
+          <li ng-repeat="quote in quotes" class="quote">
+            <img ng-src="images/{{quote.img}}" alt="{{quote.quotee}}">
+            <p>{{quote.quote}}</p>
+            <i>{{quote.quotee}}</i>
           </li>
         </ul>
       </section>
