@@ -26,9 +26,14 @@
             margin-top: 10px;
             margin-bottom: 10px;
             display: block;
+            transition: 0.4s;
 
             i {
                 padding-right: 5px;
+            }
+
+            &:hover {
+                color: $hover;
             }
         }
     }

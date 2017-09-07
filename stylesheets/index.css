@@ -1,48 +1,49 @@
 /* line 1, ../sass/components/_base.scss */
 body {
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/binding_dark.png");
+  background-image: url("../images/background.png");
   font-family: "Open Sans", sans-serif;
+  background-color: #000000;
 }
 
-/* line 6, ../sass/components/_base.scss */
+/* line 7, ../sass/components/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 10, ../sass/components/_base.scss */
+/* line 11, ../sass/components/_base.scss */
 .container {
   max-width: 960px;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -moz-box-shadow: 0 0 15px #888;
   -webkit-box-shadow: 0 0 15px #888;
   box-shadow: 0 0 15px #888;
   margin: 50px auto;
 }
-/* line 20, ../sass/components/_base.scss */
+/* line 21, ../sass/components/_base.scss */
 .container .wrapper {
   padding: 20px;
 }
 
-/* line 25, ../sass/components/_base.scss */
+/* line 26, ../sass/components/_base.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 29, ../sass/components/_base.scss */
+/* line 30, ../sass/components/_base.scss */
 p {
   margin: 0;
 }
 
-/* line 33, ../sass/components/_base.scss */
+/* line 34, ../sass/components/_base.scss */
 h1,
 h2,
 h3 {
   margin: 0;
 }
 
-/* line 39, ../sass/components/_base.scss */
+/* line 40, ../sass/components/_base.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -55,7 +56,7 @@ header {
   background-image: url("../images/header.jpg");
   background-size: cover;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 /* line 9, ../sass/components/_header.scss */
 header .title {
@@ -95,12 +96,14 @@ nav ul li {
 }
 /* line 13, ../sass/components/_nav.scss */
 nav ul li a {
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
+  transition: 0.4s;
 }
-/* line 17, ../sass/components/_nav.scss */
+/* line 18, ../sass/components/_nav.scss */
 nav ul li a:hover {
   text-decoration: none;
+  color: #EAA200;
 }
 
 /* line 3, ../sass/components/_description.scss */
@@ -128,22 +131,27 @@ nav ul li a:hover {
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
+  transition: 0.4s;
 }
-/* line 30, ../sass/components/_description.scss */
+/* line 31, ../sass/components/_description.scss */
 .description .text a i {
   padding-right: 5px;
 }
+/* line 35, ../sass/components/_description.scss */
+.description .text a:hover {
+  color: #EAA200;
+}
 @media screen and (min-width: 700px) {
-  /* line 36, ../sass/components/_description.scss */
+  /* line 41, ../sass/components/_description.scss */
   .description .text {
     float: right;
     width: 45%;
   }
-  /* line 40, ../sass/components/_description.scss */
+  /* line 45, ../sass/components/_description.scss */
   .description .text p {
     margin: 0;
   }
-  /* line 45, ../sass/components/_description.scss */
+  /* line 50, ../sass/components/_description.scss */
   .description .video {
     float: left;
     width: 50%;
@@ -152,8 +160,8 @@ nav ul li a:hover {
 
 /* line 1, ../sass/components/_mainimage.scss */
 .main-image {
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
   padding: 20px;
   text-align: center;
 }
@@ -178,7 +186,7 @@ nav ul li a:hover {
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #CCCCCC;
 }
 /* line 12, ../sass/components/_quotes.scss */
 .quotes .quote img {
@@ -211,7 +219,7 @@ nav ul li a:hover {
 /* line 1, ../sass/components/_footer.scss */
 footer {
   background-color: #000000;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 10px;
   text-align: center;
 }
